@@ -1,0 +1,10 @@
+{
+  "branding": {
+    "image": "default-image.png",
+    "name": "llamacoder",
+    "style": {
+      "color": "#000000",
+      "font": "Arial"
+    }
+  }
+}
