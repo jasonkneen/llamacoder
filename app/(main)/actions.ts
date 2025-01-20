@@ -9,6 +9,15 @@ import {
   screenshotToCodePrompt,
   softwareArchitectPrompt,
 } from "@/lib/prompts";
+import fs from "fs";
+import path from "path";
+
+const brandingConfigPath = path.resolve(process.cwd(), "branding-config.json");
+
+function getBrandingConfig() {
+  const rawData = fs.readFileSync(brandingConfigPath, "utf-8");
+  return JSON.parse(rawData);
+}
 
 export async function createChat(
   prompt: string,
